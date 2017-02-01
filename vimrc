@@ -1,4 +1,3 @@
-#TEST
 "      _               _                 _  __
 "     | |__   __ _  __| | __      _____ | |/ _|
 "     | '_ \ / _` |/ _` | \ \ /\ / / _ \| | |_
@@ -132,7 +131,7 @@ function! s:HL(group, fg, ...)
             let histring .= 'guifg=#' . c[0] . ' ctermfg=' . c[1] . ' '
         endif
     endif
-
+#TEST
     if a:0 >= 1 && strlen(a:1)
         if a:1 == 'bg'
             let histring .= 'guibg=bg ctermbg=bg '
